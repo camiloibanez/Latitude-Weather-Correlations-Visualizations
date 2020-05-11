@@ -1,3 +1,5 @@
+/* Navbar */
+
 .navbar-brand {
     margin-left: 150px;
     background-color: rgb(74, 170, 165); 
@@ -50,4 +52,202 @@
 }
 body {
     background-color: rgb(237,237,237) !important;
+}
+
+/* Landing page */
+
+
+h1, h2, h3 {
+    color:rgb(74, 170, 165);
+}
+
+.land-tempmap {
+    padding: 0px 20px 20px 0px;
+    float: left;
+}
+
+.land-paragraph {
+    font-size: 18px;
+}
+
+/* Comparison page */
+
+.comp-block {
+    background-color: white;
+}
+
+@media (max-width: 1165px) {
+    .comp-pic {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1003px) {
+    .comp-pic {
+        width: 300px;
+    }
+}
+
+@media (max-width: 905px) {
+    .comp-pic {
+        width: 250px;
+    }
+}
+
+@media (max-width: 818px) {
+    .comp-pic {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .comp-pic {
+        width: 500px;
+    }
+}
+
+@media (max-width: 622px) {
+    .comp-pic {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .comp-block {
+        margin: 100px;
+        padding: 50px;
+    }
+
+    .comp-line {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .comp-block {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .comp-line {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    .comp-block {
+        margin: 0px;
+        padding: 30px 20px;
+    }
+}
+.page-on {
+    border: solid rgb(74, 170, 165);
+}
+
+/* Data page */
+
+#d-block {
+    background-color: white;
+    margin: 50px 100px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+@media (max-width: 1252px) {
+    #d-block {
+        margin: 50px 10px;
+    }
+}
+/* Mobile friendly */
+
+#land-block1, #t-block1, #h-block1, #c-block1, #w-block1 {
+    background-color: white;
+    padding: 30px;
+}
+
+#land-block2, #t-block2, #h-block2, #c-block2, #w-block2 {
+    background-color:white;
+    padding: 30px;
+}
+
+@media (min-width: 700px) {
+    .land-tempmap {
+        width: 220px;
+        height: 220px;
+    }
+
+    .tempmap, .humiditymap, .cloud_map, .wsmap {
+        width: 600px;
+    }
+
+    .block2-map {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1260px) {
+    #land-block1, #t-block1, #h-block1, #c-block1, #w-block1 {
+        width: 700px;
+        float: left;
+        margin: 100px 15px 15px 100px;
+    }
+
+    #land-block2, #t-block2, #h-block2, #c-block2, #w-block2 {
+        float: left;
+        width: 400px;
+        margin: 100px 15px 15px 15px;
+    }
+}
+
+@media (max-width: 1260px) {
+    #land-block1, #t-block1, #h-block1, #c-block1, #w-block1 {
+        width: 900px;
+        margin: 15px;
+    }
+
+
+    #land-block2, #t-block2, #h-block2, #c-block2, #w-block2 {
+        width: 900px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 990px) {
+    #land-block1, #t-block1, #h-block1, #c-block1, #w-block1 {
+        width: 700px;
+        margin: 15px;
+    }
+
+
+    #land-block2, #t-block2, #h-block2, #c-block2, #w-block2 {
+        width: 700px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    #land-block1, #t-block1, #h-block1, #c-block1, #w-block1 {
+        width: 500px;
+        margin: 15px;
+    }
+
+    #land-block2, #t-block2, #h-block2, #c-block2, #w-block2 {
+        width: 500px;
+        margin: 15px;
+    }
+    
+    .land-tempmap {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .tempmap, .humiditymap, .cloud_map, .wsmap {
+        width: 425px;
+    }
+
+    .block2-map {
+        width: 100px;
+        height: 100px;
+    }
 }
