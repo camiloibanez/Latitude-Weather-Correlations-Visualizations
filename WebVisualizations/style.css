@@ -54,6 +54,25 @@ body {
     background-color: rgb(237,237,237) !important;
 }
 
+@media (min-width: 992px) {
+    #big-screen {
+        display: flex;
+    }
+
+    #sm-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    #big-screen {
+        display: none;
+    }
+
+    #sm-screen {
+        display: flex;
+    }
+}
 /* Landing page */
 
 
