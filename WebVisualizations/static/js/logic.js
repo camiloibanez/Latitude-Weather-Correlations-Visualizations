@@ -7,29 +7,32 @@ var streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{
     accessToken: API_KEY
 });
 
+cities_url = "https://camiloibanez.github.io/Latitude-Weather-Correlations-Visualizations/WebVisualizations/Resources/cities.csv"
+
 var array;
 
-$.get("../../Resources/assets/cities.csv", function(data, status) {
-    array =$.csv.toObjects(data);
-    console.log(array);
+$.get(cities_url, function(data, status) {
+    array = $.csv.toObjects(data);
 });
 
 var cityMarkers = [];
 
-for (var i=0; i < array.length; i++) {
-    cityMarkers.push(L.marker([array[i]["Lat"], array[i]["Lng"]]).bindPopup("<h2>" + array[i]["City"] + "</h2>"));
-};
+setTimeout(function() {
+    for (var i=0; i < array.length; i++) {
+        cityMarkers.push(L.marker([array[i]["Lat"], array[i]["Lng"]]).bindPopup("<h2>" + array[i]["City"] + "</h2>"));
+    };
 
-var cityLayer = L.layerGroup(cityMarkers);
+    var cityLayer = L.layerGroup(cityMarkers);
 
-var baseMaps = {"Street View" : streets};
+    var baseMaps = {"Street View" : streets};
 
-var overlayMaps = {Cities: cityLayer};
+    var overlayMaps = {Cities: cityLayer};
 
-var myMap = L.map("map", {
-    center: [15, 0],
-    zoom: 2,
-    layers: [streets, cityLayer]
-});
+    var myMap = L.map("map", {
+        center: [15, 0],
+        zoom: 2,
+        layers: [streets, cityLayer]
+    });
 
-L.control.layers(baseMaps, overlayMaps).addTo(myMap);
+    L.control.layers(baseMaps, overlayMaps).addTo(myMap);
+}, 2000);
