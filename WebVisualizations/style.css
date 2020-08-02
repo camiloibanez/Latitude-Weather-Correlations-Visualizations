@@ -177,6 +177,18 @@ h1, h2, h3 {
         margin: 50px 10px;
     }
 }
+
+/* Map Page */
+
+#map-block1 {
+    background-color: white;
+    padding: 30px;
+}
+
+#map {
+    height: 300px;
+}
+
 /* Mobile friendly */
 
 #land-block1, #t-block1, #h-block1, #c-block1, #w-block1 {
