@@ -29,7 +29,7 @@ var overlayMaps = {Cities: cityLayer};
 var myMap = L.map("map", {
     center: [15, 0],
     zoom: 2,
-    layers = [streets, cityLayer]
+    layers: [streets, cityLayer]
 });
 
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
