@@ -25,7 +25,7 @@ var dark = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?
     accessToken: API_KEY
 });
 
-cities_url = "https://camiloibanez.github.io/Latitude-Weather-Correlations-Visualizations/WebVisualizations/Resources/cities.csv"
+var cities_url = "https://camiloibanez.github.io/Latitude-Weather-Correlations-Visualizations/WebVisualizations/Resources/cities.csv"
 
 var array;
 
