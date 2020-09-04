@@ -286,4 +286,7 @@ h1, h2, h3 {
         width: 100px;
         height: 100px;
     }
+
+    .navbar-brand {
+        margin-left: 0px;
 }
